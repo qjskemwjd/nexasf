@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,19 +18,33 @@
     <script src="js/skrollr.min.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/slick.min.js"></script>
-   <script src="js/jquery.bxslider.js"></script>
-<style>
+    <script src="js/jquery.bxslider.js"></script>
+    <style>
+        .visible-xs,
+        .visible-sm,
+        .visible-md,
+        .visible-lg {
+            display: none !important;
+        }
 
-.visible-xs, .visible-sm, .visible-md, .visible-lg {display:none !important;}
-.pull-right {float:right !important;}
-@media (max-width: 767px) {
-	.hidden-xs {display:none !important;}
-	.visible-xs, .visible-xs {display:block !important;}
-}
+        .pull-right {
+            float: right !important;
+        }
 
-</style>
+        @media (max-width: 767px) {
+            .hidden-xs {
+                display: none !important;
+            }
+
+            .visible-xs,
+            .visible-xs {
+                display: block !important;
+            }
+        }
+    </style>
 
 </head>
+
 <body>
     <!-- http://www.nexasf.com/index.php  -->
     <div class="wrap" id="nexa">
@@ -85,7 +100,7 @@
                     </ul>
                 </div><!--tbutton  -->
                 <div class="gnb_right">
-                    <a href="#" class="h_menu"> <img src="img/h_menu.png" alt="전체메뉴버튼"></a>
+                    <a href="#" class="h_menu"> <img src="./img/h_menu.png" alt="전체메뉴버튼"></a>
                 </div><!--gnb_right-->
             </div><!-- headDiv -->
             <div class="twoDbg"></div><!-- twoDbg -->
@@ -94,7 +109,7 @@
         <!-- 모바일 구조 -->
         <div class="m_gnb_right">
             <a href="#" class="mobileMenu">
-                <img src="img/h_menu.png" alt="모바일전체메뉴">
+                <img src="./img/h_menu.png" alt="모바일전체메뉴">
             </a>
         </div>
         <div class="dimBg"></div><!-- .dimBg -->
@@ -144,53 +159,69 @@
                     <li><a href="#">넥사 컨설팅 바로가기</a></li>
                 </ul>
             </div><!-- mogobu -->
-            <a href="#" class="mobileMenuXbt"><img src="img/menuCloseBtn.gif" alt="닫기버튼"></a>
+            <a href="#" class="mobileMenuXbt"><img src="./img/menuCloseBtn.gif" alt="닫기버튼"></a>
 
         </div><!-- gnbM -->
 
         <!-- 반응형헤더구조 -->
         <section class="visual">
             <div class="video">
-                <video src="img/nexaf_visual.mov" loop muted autoplay></video>
+                <video src="./img/nexaf_visual.mov" loop muted autoplay></video>
             </div>
             <div class="vtxt">
                 <ul>
-                    <li><h1><b>Smart Factory</b>컨설팅 &</h1></li>
-                    <li><h1><b>솔루션</b>기반<b>전문 엔지니어링</b>회사</h1></li>
+                    <li>
+                        <h1><b>Smart Factory</b>컨설팅 &</h1>
+                    </li>
+                    <li>
+                        <h1><b>솔루션</b>기반<b>전문 엔지니어링</b>회사</h1>
+                    </li>
                 </ul>
             </div>
             <div class="vfooter">
                 <div class="vf_con">
                     <div class="vf_box">
                         <div class="vb_img">
-                            <img src="img/v_icon1.png" alt="">
+                            <img src="./img/v_icon1.png" alt="">
                         </div>
                         <div class="vb_txt">
                             <ul>
-                                <li><h5>Smart</h5></li>
-                                <li><p>데이터 기반의 스마트한<br>솔루션을 바탕으로 시스템 구축</p></li>
+                                <li>
+                                    <h5>Smart</h5>
+                                </li>
+                                <li>
+                                    <p>데이터 기반의 스마트한<br>솔루션을 바탕으로 시스템 구축</p>
+                                </li>
                             </ul>
                         </div>
                     </div>
                     <div class="vf_box">
                         <div class="vb_img">
-                            <img src="img/v_icon2.png" alt="">
+                            <img src="./img/v_icon2.png" alt="">
                         </div>
                         <div class="vb_txt">
                             <ul>
-                                <li><h5>Innovation</h5></li>
-                                <li><p>넥사와 고객사의 혁신을<br>향한 끝없는 여정</p></li>
+                                <li>
+                                    <h5>Innovation</h5>
+                                </li>
+                                <li>
+                                    <p>넥사와 고객사의 혁신을<br>향한 끝없는 여정</p>
+                                </li>
                             </ul>
                         </div>
                     </div>
                     <div class="vf_box">
                         <div class="vb_img">
-                            <img src="img/v_icon3.png" alt="">
+                            <img src="./img/v_icon3.png" alt="">
                         </div>
                         <div class="vb_txt">
                             <ul>
-                                <li><h5>Distinction</h5></li>
-                                <li><p>똑같음이 아닌 차별성을 두는<br>넥사만의 시스템</p></li>
+                                <li>
+                                    <h5>Distinction</h5>
+                                </li>
+                                <li>
+                                    <p>똑같음이 아닌 차별성을 두는<br>넥사만의 시스템</p>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -204,7 +235,9 @@
                         <li>
                             <h1><b>Smart Factory</b> 구축 솔루션</h1>
                         </li>
-                        <li><p>기업 환경에 맞는 스마트 팩토리 솔루션을 제안합니다.</p></li>
+                        <li>
+                            <p>기업 환경에 맞는 스마트 팩토리 솔루션을 제안합니다.</p>
+                        </li>
                     </ul>
                 </div>
                 <div class="so_con">
@@ -212,8 +245,8 @@
                         <ul data-aos-duration="1000" data-aos="fade-down" class="aos-init">
                             <a href="#"></a>
                             <li>
-                                <img src="img/main/solu_icon1.png" alt="">
-                                <img src="img/main/sol_isp.jpg" alt="">
+                                <img src="./img/main/solu_icon1.png" alt="solu icon">
+                                <img src="./img/main/sol_isp.jpg" alt="solu icon">
                             </li>
                             <li>
                                 <h5>01</h5>
@@ -227,8 +260,8 @@
                         <ul data-aos-duration="1000" data-aos="fade-down" data-aos-delay="200" class="aos-init">
                             <a href="#"></a>
                             <li>
-                                <img src="img/main/solu_icon2.png" alt="">
-                                <img src="img/main/sol_erp.jpg" alt="">
+                                <img src="./img/main/solu_icon2.png" alt="solu icon">
+                                <img src="./img/main/sol_erp.jpg" alt="solu icon">
                             </li>
                             <li>
                                 <h5>02</h5>
@@ -242,8 +275,8 @@
                         <ul data-aos-duration="1000" data-aos="fade-down" data-aos-delay="400" class="aos-init">
                             <a href="#"></a>
                             <li>
-                                <img src="img/main/solu_icon3.png" alt="">
-                                <img src="img/main/sol_mes.jpg" alt="">
+                                <img src="./img/main/solu_icon3.png" alt="solu icon">
+                                <img src="./img/main/sol_mes.jpg" alt="solu icon">
                             </li>
                             <li>
                                 <h5>03</h5>
@@ -257,8 +290,8 @@
                         <ul data-aos-duration="1000" data-aos="fade-down" data-aos-delay="600" class="aos-init">
                             <a href="#"></a>
                             <li>
-                                <img src="img/main/solu_icon4.png" alt="">
-                                <img src="img/main/sol_cmms.jpg" alt="">
+                                <img src="./img/main/solu_icon4.png" alt="solu icon">
+                                <img src="./img/main/sol_cmms.jpg" alt="solu icon">
                             </li>
                             <li>
                                 <h5>04</h5>
@@ -272,8 +305,8 @@
                         <ul data-aos-duration="1000" data-aos="fade-down" data-aos-delay="800" class="aos-init">
                             <a href="#"></a>
                             <li>
-                                <img src="img/main/solu_icon5.png" alt="">
-                                <img src="img/main/sol_data.jpg" alt="">
+                                <img src="./img/main/solu_icon5.png" alt="solu icon">
+                                <img src="./img/main/sol_data.jpg" alt="solu icon">
                             </li>
                             <li>
                                 <h5>05</h5>
@@ -286,80 +319,100 @@
                 </div>
                 <div class="fac_ban">
                     <div class="fb_con">
-                    <div class="fc_box">
-                        <a href="#"></a>
-                        <img src="img/main/banner1.jpg" alt="">
-                        <ul>
-                            <li><h2>회사소개</h2></li>
-                            <li><p>Company Introduction</p></li>
-                        </ul>
+                        <div class="fc_box">
+                            <a href="#"></a>
+                            <img src="./img/main/banner1.jpg" alt="banner icon">
+                            <ul>
+                                <li>
+                                    <h2>회사소개</h2>
+                                </li>
+                                <li>
+                                    <p>Company Introduction</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="fc_box">
+                            <a href="#"></a>
+                            <img src="./img/main/banner2.jpg" alt="banner icon">
+                            <ul>
+                                <li>
+                                    <h2>스마트 공장</h2>
+                                </li>
+                                <li>
+                                    <p>Smart Factory</p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="fc_box">
-                        <a href="#"></a>
-                        <img src="img/main/banner2.jpg" alt="">
-                        <ul>
-                            <li><h2>스마트 공장</h2></li>
-                            <li><p>Smart Factory</p></li>
-                        </ul>
-                    </div>
-                </div>
                 </div>
             </div><!-- fac_ban -->
             <div class="pro_build">
-                <div class="pb_left_bg" data-aos="fade-right"
-                data-aos-offset="300"
-                data-aos-easing="ease-in-sine">
-                    <img src="img/main/partners_bg_left.png" alt="">
+                <div class="pb_left_bg" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <img src="./img/main/partners_bg_left.png" alt="partners icon">
                 </div>
-                <div class="pb_right_bg" data-aos="fade-left"
-                data-aos-offset="500"
-                data-aos-easing="ease-in-sine">
-                    <img src="img/main/partners_bg_right.png" alt="">
+                <div class="pb_right_bg" data-aos="fade-left" data-aos-offset="500" data-aos-easing="ease-in-sine">
+                    <img src="./img/main/partners_bg_right.png" alt="partners icon">
                 </div>
                 <div class="main_pro">
                     <div class="pa_tit">
                         <ul>
-                            <li><h1>Nexa’s Program</h1></li>
-                            <li> <p>Smart Factory 컨설팅 & 솔루션 기반 전문 엔지니어링 회사</p></li>
+                            <li>
+                                <h1>Nexa’s Program</h1>
+                            </li>
+                            <li>
+                                <p>Smart Factory 컨설팅 & 솔루션 기반 전문 엔지니어링 회사</p>
+                            </li>
                         </ul>
                     </div>
                     <div class="pa_con">
                         <div class="pc_box">
                             <a href="#"></a>
                             <div class="pc_top">
-                                <img src="img/main/partners_icon1.png" alt="">
+                                <img src="./img/main/partners_icon1.png" alt="partners icon">
                             </div>
                             <div class="pc_bot">
                                 <ul>
-                                    <li> <h5>스마트공장</h5> </li>
-                                    <li><p>무료 사전진단</p></li>
-                                    <li><img src="img/main/partners_arrow.png" alt=""></li>
+                                    <li>
+                                        <h5>스마트공장</h5>
+                                    </li>
+                                    <li>
+                                        <p>무료 사전진단</p>
+                                    </li>
+                                    <li><img src="./img/main/partners_arrow.png" alt="partners icon"></li>
                                 </ul>
                             </div>
                         </div> <!-- pc_box1 -->
                         <div class="pc_box">
                             <a href="#"></a>
                             <div class="pc_top">
-                                <img src="img/main/partners_icon2.png" alt="">
+                                <img src="./img/main/partners_icon2.png" alt="partners icon">
                             </div>
                             <div class="pc_bot">
                                 <ul>
-                                    <li> <h5>스마트공장</h5> </li>
-                                    <li><p>리모델링 프로그램</p></li>
-                                    <li><img src="img/main/partners_arrow.png" alt=""></li>
+                                    <li>
+                                        <h5>스마트공장</h5>
+                                    </li>
+                                    <li>
+                                        <p>리모델링 프로그램</p>
+                                    </li>
+                                    <li><img src="./img/main/partners_arrow.png" alt="partners icon"></li>
                                 </ul>
                             </div>
                         </div> <!-- pc_box2 -->
                         <div class="pc_box">
                             <a href="#"></a>
                             <div class="pc_top">
-                                <img src="img/main/partners_icon3.png" alt="">
+                                <img src="./img/main/partners_icon3.png" alt="partners icon">
                             </div>
                             <div class="pc_bot">
                                 <ul>
-                                    <li> <h5>금형제조기업</h5> </li>
-                                    <li><p>스마트공장 솔루션</p></li>
-                                    <li><img src="img/main/partners_arrow.png" alt=""></li>
+                                    <li>
+                                        <h5>금형제조기업</h5>
+                                    </li>
+                                    <li>
+                                        <p>스마트공장 솔루션</p>
+                                    </li>
+                                    <li><img src="./img/main/partners_arrow.png" alt="partners icon"></li>
                                 </ul>
                             </div>
                         </div> <!-- pc_box3 -->
@@ -383,17 +436,16 @@
                                 </li>
                             </ul>
                         </div>
-             
-                
+
+
                         <div class="bc_con">
                             <div class="bc_slide">
-                
-                
+
+
                                 <div class="bc_box">
                                     <a href="#"></a>
                                     <div class="bc_img">
-                                        <img src="http://www.nexasf.com/data/file/sub4_1/thumb-662298726_UbgfOGWn_4107859ccbb4eb2e75a8878a01f339967a488dad_460x280.jpg"
-                                            alt="" width="460" height="280">
+                                        <img src="./img/bc_box.jpeg" alt="bc box img" width="460" height="280">
                                     </div>
                                     <div class="bx_tit">
                                         <h1>W사 구축</h1>
@@ -413,13 +465,12 @@
                                         </ul>
                                     </div>
                                 </div>
-                
-                
+
+
                                 <div class="bc_box">
                                     <a href="#"></a>
                                     <div class="bc_img">
-                                        <img src="http://www.nexasf.com/data/file/sub4_1/thumb-662298726_DmyPqVEH_48d9190a7f9292b9afd94911f230ab3a3ea3070f_460x280.jpg"
-                                            alt="" width="460" height="280">
+                                        <img src="./img/bc_box2.jpeg" alt="bc box img" width="460" height="280">
                                     </div>
                                     <div class="bx_tit">
                                         <h1>V사 구축</h1>
@@ -439,13 +490,12 @@
                                         </ul>
                                     </div>
                                 </div>
-                
-                
+
+
                                 <div class="bc_box">
                                     <a href="#"></a>
                                     <div class="bc_img">
-                                        <img src="http://www.nexasf.com/data/file/sub4_1/thumb-662298726_k6i9oJAP_603752c03976996a69aa3c450a57779052991711_460x280.jpg"
-                                            alt="" width="460" height="280">
+                                        <img src="./img/bc_box3.jpeg" alt="bc box img" width="460" height="280">
                                     </div>
                                     <div class="bx_tit">
                                         <h1>U사 구축</h1>
@@ -464,13 +514,12 @@
                                         </ul>
                                     </div>
                                 </div>
-                
-                
+
+
                                 <div class="bc_box">
                                     <a href="#"></a>
                                     <div class="bc_img">
-                                        <img src="http://www.nexasf.com/data/file/sub4_1/thumb-662298726_zF4BikyJ_063ccd53368a0bfb0877cb8f587f74d6a2d5bf5b_460x280.jpg"
-                                            alt="" width="460" height="280">
+                                        <img src="./img/bc_box4.jpeg" alt="bc box img" width="460" height="280">
                                     </div>
                                     <div class="bx_tit">
                                         <h1>T사구축</h1>
@@ -490,11 +539,11 @@
                                         </ul>
                                     </div>
                                 </div>
-          
-             
-                
+
+
+
                             </div>
-                
+
                             <script>
                                 $('.bc_slide').slick({
                                     slidesToShow: 2,
@@ -536,327 +585,412 @@
                         </div>
                     </div>
                 </div>
-                
-                </div>
-                <div class="forum">
 
-                    <div class="fo_top">
-                        <div class="fo_con">
-                            <div class="fo_tit">
+            </div>
+            <div class="forum">
+
+                <div class="fo_top">
+                    <div class="fo_con">
+                        <div class="fo_tit">
+                            <ul>
+                                <li>
+                                    <h1><b>스마트공장</b> 연구포럼</h1>
+                                </li>
+                                <li>
+                                    <p>스마트공장과 관련된 공급기업, 수요기업, 전문가, 관련기관과의 연결 중심 커뮤니티</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="fo_tab">
+                            <button class="tablinks active"
+                                onclick="openCity(event, 'demand')"><span>수요기업</span></button>
+                            <button class="tablinks" onclick="openCity(event, 'supply')"><span>공급기업</span></button>
+                            <button class="tablinks" onclick="openCity(event, 'expert')"><span>전문가</span></button>
+                        </div>
+
+                        <div id="demand" class="tabcontent" style="display: block;">
+                            <div class="fo_box">
                                 <ul>
-                                    <li><h1><b>스마트공장</b> 연구포럼</h1></li>
-                                    <li><p>스마트공장과 관련된 공급기업, 수요기업, 전문가, 관련기관과의 연결 중심 커뮤니티</p></li>
+                                    <li><img src="./img/fo_demand01.jpg" alt="demand img"></li>
+                                    <li>
+                                        <h5>경진기계</h5>
+                                    </li>
                                 </ul>
                             </div>
-        
-                            <div class="fo_tab">
-                                <button class="tablinks active" onclick="openCity(event, 'demand')"><span>수요기업</span></button>
-                                <button class="tablinks" onclick="openCity(event, 'supply')"><span>공급기업</span></button>
-                                <button class="tablinks" onclick="openCity(event, 'expert')"><span>전문가</span></button>
-                            </div>
-        
-                            <div id="demand" class="tabcontent" style="display: block;">
-                                <div class="fo_box">
-                                    <ul>
-                                        <li><img src="http://www.nexasf.com/images/main/fo_demand01.jpg" alt=""></li>
-                                        <li><h5>경진기계</h5></li>
-                                    </ul>
-                                </div>
-                                <div class="fo_box">
-                                    <ul>
-                                        <li><a href="https://www.samickthk.co.kr/index.jsp" target="_blank"><img src="http://www.nexasf.com/images/main/fo_demand05.jpg" alt=""></li>
-                                        <li><h5>삼익THK</h5></a></li>
-                                    </ul>
-                                </div>
-                                <div class="fo_box">
-                                    <ul>
-                                        <li><a href="http://sangwoohitec.co.kr/" target="_blank"><img src="http://www.nexasf.com/images/main/fo_demand06.jpg" alt=""></li>
-                                        <li><h5>상우하이텍</h5></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-        
-                            <div id="supply" class="tabcontent">
-                                <div class="fo_box">
-                                    <ul>
-                                        <li><img src="http://www.nexasf.com/images/main/fo_supply01.jpg" alt=""></li>
-                                        <li><h5>넥사</h5></li>
-                                    </ul>
-                                </div>
-                                <div class="fo_box">
-                                    <ul>
-                                        <li><a href="http://www.mnvision.co.kr/main.php" target="_blank"><img src="http://www.nexasf.com/images/main/fo_supply04.jpg" alt=""></li>
-                                        <li><h5>Mnvision</h5></a></li>
-                                    </ul>
-                                </div>
-                                <div class="fo_box">
-                                    <ul>
-                                        <li><a href="http://www.innosven.com" target="_blank"><img src="http://www.nexasf.com/images/main/fo_supply08.jpg" alt=""></li>
-                                        <li><h5>이노스벤</h5></a></li>
-                                    </ul>
-                                </div>
-                                 <div class="fo_box">
-                                    <ul>
-                                        <li><a href="http://www.tntech.co.kr/" target="_blank"><img src="http://www.nexasf.com/images/main/fo_supply10.jpg" alt=""></li>
-                                        <li><h5>티앤테크</h5></a></li>
-                                    </ul>
-                                </div>
-                                <div class="fo_box">
-                                    <ul>
-                                        <li><a href="http://www.kuka.com" target="_blank"><img src="http://www.nexasf.com/images/main/fo_supply11.png" alt=""></li>
-                                        <li><h5>KUKA</h5></a></li>
-                                    </ul>
-                                </div>
-                                <div class="fo_box">
-                                    <ul>
-                                        <li><a href="http://3dautomation.kr/" target="_blank"><img src="http://www.nexasf.com/images/main/fo_supply12.png" alt=""></li>
-                                        <li><h5>3D오토메이션</h5></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div id="expert" class="tabcontent">
-                                <div class="fo_box">
-                                    <ul>
-                                        <li><img src="http://www.nexasf.com/images/main/fo_prof01.jpg" alt=""></li>
-                                        <li><h5>가람화첩</h5></li>
-                                    </ul>
-                                </div>
-                                <div class="fo_box">
-                                    <ul>
-                                        <li><img src="http://www.nexasf.com/images/main/fo_prof02.jpg" alt=""></li>
-                                        <li><h5>계명대 산학협력단</h5></li>
-                                    </ul>
-                                </div>
-                                <div class="fo_box">
-                                    <ul>
-                                        <li><img src="http://www.nexasf.com/images/main/fo_prof03.jpg" alt=""></li>
-                                        <li><h5>RenderPage</h5></li>
-                                    </ul>
-                                </div>
-                                <div class="fo_box">
-                                    <ul>
-                                        <li><img src="http://www.nexasf.com/images/main/fo_prof04.jpg" alt=""></li>
-                                        <li><h5>대구테크노파크 모바일융합센터</h5></li>
-                                    </ul>
-                                </div>
-                                <div class="fo_box">
-                                    <ul>
-                                        <li><img src="http://www.nexasf.com/images/main/fo_prof05.jpg" alt=""></li>
-                                        <li><h5>에스플러스 경영컨설팅</h5></li>
-                                    </ul>
-                                </div>
-                                <div class="fo_box">
-                                    <ul>
-                                        <li><img src="http://www.nexasf.com/images/main/fo_prof06.jpg" alt=""></li>
-                                        <li><h5>영남대학교</h5></li>
-                                    </ul>
-                                </div>
-                                <div class="fo_box">
-                                    <ul>
-                                        <li><img src="http://www.nexasf.com/images/main/fo_prof07.jpg" alt=""></li>
-                                        <li><h5>EDR</h5></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div> <!-- fo_top -->
-                    <div class="fo_bot">
-                        <h1>NEXA</h1>
-                        <div class="fo_con">
-                            <div class="fo_tit">
+                            <div class="fo_box">
                                 <ul>
-                                    <li><h1>ONE Stop Solution</h1></li>
-                                    <li><p>스마트공장 구축 ONE Stop Solution 제공을 위한 네트워크를 형성하고 있으며<br>
-                                    협력 방안 모색, 구축 사례 및 애로사항 공유를 통해 문제점 개선 및 표준 시스템 개발에 힘쓰고 있습니다.</p></li>
+                                    <li><a href="javascript:void(0)" target="_blank"><img src="img/fo_demand05.jpg"
+                                                alt="demand img"></li>
+                                    <li>
+                                        <h5>삼익THK</h5></a>
+                                    </li>
                                 </ul>
                             </div>
-                            <div class="fb_con">
-                                <div class="fb_box aos-init" data-aos-duration="1000" data-aos="fade-down" data-aos-delay="800">
-                                    <ul>
-                                        <li><img src="http://www.nexasf.com/images/main/forum_icon1.png" alt=""></li>
-                                        <li><h5>정기<br> 운영회의</h5></li>
-                                    </ul>
-                                </div>
-                                <div class="fb_box aos-init" data-aos-duration="1000" data-aos="fade-down" data-aos-delay="400">
-                                    <ul>
-                                        <li><img src="http://www.nexasf.com/images/main/forum_icon2.png" alt=""></li>
-                                        <li><h5>스마트공장 구축 사례<br> 및 전략 세미나</h5></li>
-                                    </ul>
-                                </div>
-                                <div class="fb_box aos-init" data-aos-duration="1000" data-aos="fade-down">
-                                    <ul>
-                                        <li><img src="http://www.nexasf.com/images/main/forum_icon3.png" alt=""></li>
-                                        <li><h5>Smart Factory Business<br> Networking Day</h5></li>
-                                    </ul>
-                                </div>
-                                <div class="fb_box aos-init" data-aos-duration="1000" data-aos="fade-down" data-aos-delay="400">
-                                    <ul>
-                                        <li><img src="http://www.nexasf.com/images/main/forum_icon4.png" alt=""></li>
-                                        <li><h5>스마트공장<br> 협력 간담회</h5></li>
-                                    </ul>
-                                </div>
-                                <div class="fb_box aos-init" data-aos-duration="1000" data-aos="fade-down" data-aos-delay="800">
-                                    <ul>
-                                        <li><img src="http://www.nexasf.com/images/main/forum_icon5.png" alt=""></li>
-                                        <li><h5>선진 스마트공장<br> 견학</h5></li>
-                                    </ul>
-                                </div>
+                            <div class="fo_box">
+                                <ul>
+                                    <li><a href="javascript:void(0)" target="_blank"><img src="img/fo_demand06.jpg"
+                                                alt="demand img"></li>
+                                    <li>
+                                        <h5>상우하이텍</h5></a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                    </div><!-- fo_bot -->
-                    <div class="new_no aos-init aos-animate" data-aos-duration="1200" data-aos="fade-up">
-                        <div class="nn_con">
-                                            <div class="news">
-                                <h3>소식</h3>
-                                <div class="ne_con">
-                                  
-                                    <div class="nc_box">
-                                        <a href="#"></a>
-                                        <div class="nc_img">
-                                             <img src="http://www.nexasf.com/data/file/sub6_2/thumb-3731395733_grftomcW_5d24e59582b0db6d48712adf3adec75d67943350_350x240.png" alt="">							</div>
-                                        <div class="nc_txt">
-                                            <ul>
-                                                <li><h5>2023년 6월 소식지</h5></li>
-                                                <li><p>2023-06-12</p></li>
-                                                <li><a href="#"><img src="http://www.nexasf.com/images/main/news_plus.png" alt=""></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="nc_box">
-                                        <a href="#"></a>
-                                        <div class="nc_img">
-                                             <img src="http://www.nexasf.com/data/file/sub6_2/thumb-3731395733_bAvmn4uL_5127b81ff6f3c4b522eb1a2f50b78063f8d5b725_350x240.jpg" alt="">							</div>
-                                        <div class="nc_txt">
-                                            <ul>
-                                                <li><h5>2023년 5월 소식지</h5></li>
-                                                <li><p>2023-05-10</p></li>
-                                                <li><a href="#"><img src="http://www.nexasf.com/images/main/news_plus.png" alt=""></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    
-            
-                                </div>
+
+                        <div id="supply" class="tabcontent">
+                            <div class="fo_box">
+                                <ul>
+                                    <li><img src="./img/fo_supply01.jpg" alt="supply img"></li>
+                                    <li>
+                                        <h5>넥사</h5>
+                                    </li>
+                                </ul>
                             </div>
-            
-                                            <div class="notice">
-                                <div class="no_top">
-                                    <h3>공지사항</h3>
-                                    <div class="nt_con">
-            
-                                                                    <div class="nt_box">
-                                            <a href="#"></a>
-                                            <ul>
-                                                <li><h5>2023 경북 디지털전환 종합지원 사업공고</h5></li>
-                                                <li><p>2023-06-13 </p></li>
-                                                <li><a href="#"><img src="http://www.nexasf.com/images/main/news_plus.png" alt=""></a></li>
-                                            </ul>
-                                        </div>
-                                                                   <div class="nt_box">
-                                            <a href="#"></a>
-                                            <ul>
-                                                <li><h5>2023 스마트공장 AS 지원사업</h5></li>
-                                                <li><p>2023-06-07 </p></li>
-                                                <li><a href="#"><img src="http://www.nexasf.com/images/main/news_plus.png" alt=""></a></li>
-                                            </ul>
-                                        </div>
-                                       
-                                    </div>
-                                </div>
-                                <div class="no_bot">
-                                    <h3>온라인 문의</h3>
-                                    <div class="nb_plus">
-                                        <p><a href="#"><img src="http://www.nexasf.com/images/main/news_plus.png" alt=""></a></p>
-                                    </div>
-                                </div>
+                            <div class="fo_box">
+                                <ul>
+                                    <li><a href="javascript:void(0)" target="_blank"><img src="./img/fo_supply04.jpg"
+                                                alt="supply img"></li>
+                                    <li>
+                                        <h5>Mnvision</h5></a>
+                                    </li>
+                                </ul>
                             </div>
-            
+                            <div class="fo_box">
+                                <ul>
+                                    <li><a href="javascript:void(0)" target="_blank"><img src="./img/fo_supply08.jpg"
+                                                alt="supply img"></li>
+                                    <li>
+                                        <h5>이노스벤</h5></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="fo_box">
+                                <ul>
+                                    <li><a href="javascript:void(0)" target="_blank"><img src="./img/fo_supply10.jpg"
+                                                alt="supply img"></li>
+                                    <li>
+                                        <h5>티앤테크</h5></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="fo_box">
+                                <ul>
+                                    <li><a href="javascript:void(0)" target="_blank"><img src="./img/fo_supply11.png"
+                                                alt="supply img"></li>
+                                    <li>
+                                        <h5>KUKA</h5></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="fo_box">
+                                <ul>
+                                    <li><a href="javascript:void(0)" target="_blank"><img src="./img/fo_supply12.png"
+                                                alt="supply img"></li>
+                                    <li>
+                                        <h5>3D오토메이션</h5></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="expert" class="tabcontent">
+                            <div class="fo_box">
+                                <ul>
+                                    <li><img src="./img/fo_prof01.jpg" alt="prof img"></li>
+                                    <li>
+                                        <h5>가람화첩</h5>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="fo_box">
+                                <ul>
+                                    <li><img src="./img/fo_prof02.jpg" alt="prof img"></li>
+                                    <li>
+                                        <h5>계명대 산학협력단</h5>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="fo_box">
+                                <ul>
+                                    <li><img src="./img/fo_prof03.jpg" alt="prof img"></li>
+                                    <li>
+                                        <h5>RenderPage</h5>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="fo_box">
+                                <ul>
+                                    <li><img src="./img/fo_prof04.jpg" alt="prof img"></li>
+                                    <li>
+                                        <h5>대구테크노파크 모바일융합센터</h5>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="fo_box">
+                                <ul>
+                                    <li><img src="./img/fo_prof05.jpg" alt="prof img"></li>
+                                    <li>
+                                        <h5>에스플러스 경영컨설팅</h5>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="fo_box">
+                                <ul>
+                                    <li><img src="./img/fo_prof06.jpg" alt="prof img"></li>
+                                    <li>
+                                        <h5>영남대학교</h5>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="fo_box">
+                                <ul>
+                                    <li><img src="./img/fo_prof07.jpg" alt="prof img"></li>
+                                    <li>
+                                        <h5>EDR</h5>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
+                </div> <!-- fo_top -->
+                <div class="fo_bot">
+                    <h1>NEXA</h1>
+                    <div class="fo_con">
+                        <div class="fo_tit">
+                            <ul>
+                                <li>
+                                    <h1>ONE Stop Solution</h1>
+                                </li>
+                                <li>
+                                    <p>스마트공장 구축 ONE Stop Solution 제공을 위한 네트워크를 형성하고 있으며<br>
+                                        협력 방안 모색, 구축 사례 및 애로사항 공유를 통해 문제점 개선 및 표준 시스템 개발에 힘쓰고 있습니다.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="fb_con">
+                            <div class="fb_box aos-init" data-aos-duration="1000" data-aos="fade-down"
+                                data-aos-delay="800">
+                                <ul>
+                                    <li><img src="./img/forum_icon1.png" alt="forum icon"></li>
+                                    <li>
+                                        <h5>정기<br> 운영회의</h5>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="fb_box aos-init" data-aos-duration="1000" data-aos="fade-down"
+                                data-aos-delay="400">
+                                <ul>
+                                    <li><img src="./img/forum_icon2.png" alt="forum icon"></li>
+                                    <li>
+                                        <h5>스마트공장 구축 사례<br> 및 전략 세미나</h5>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="fb_box aos-init" data-aos-duration="1000" data-aos="fade-down">
+                                <ul>
+                                    <li><img src="./img/forum_icon3.png" alt="forum icon"></li>
+                                    <li>
+                                        <h5>Smart Factory Business<br> Networking Day</h5>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="fb_box aos-init" data-aos-duration="1000" data-aos="fade-down"
+                                data-aos-delay="400">
+                                <ul>
+                                    <li><img src="./img/forum_icon4.png" alt="forum icon"></li>
+                                    <li>
+                                        <h5>스마트공장<br> 협력 간담회</h5>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="fb_box aos-init" data-aos-duration="1000" data-aos="fade-down"
+                                data-aos-delay="800">
+                                <ul>
+                                    <li><img src="./img/forum_icon5.png" alt="forum icon"></li>
+                                    <li>
+                                        <h5>선진 스마트공장<br> 견학</h5>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- fo_bot -->
+                <div class="new_no aos-init aos-animate" data-aos-duration="1200" data-aos="fade-up">
+                    <div class="nn_con">
+                        <div class="news">
+                            <h3>소식</h3>
+                            <div class="ne_con">
+
+                                <div class="nc_box">
+                                    <a href="javascript:void(0)"></a>
+                                    <div class="nc_img">
+                                        <img src="./img/news_img.png" alt="news img">
+                                    </div>
+                                    <div class="nc_txt">
+                                        <ul>
+                                            <li>
+                                                <h5>2023년 6월 소식지</h5>
+                                            </li>
+                                            <li>
+                                                <p>2023-06-12</p>
+                                            </li>
+                                            <li><a href="javascript:void(0)"><img src="./img/news_plus.png"
+                                                        alt="news plus img"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="nc_box">
+                                    <a href="javascript:void(0)"></a>
+                                    <div class="nc_img">
+                                        <img src="./img/news_img2.jpeg" alt="news img">
+                                    </div>
+                                    <div class="nc_txt">
+                                        <ul>
+                                            <li>
+                                                <h5>2023년 5월 소식지</h5>
+                                            </li>
+                                            <li>
+                                                <p>2023-05-10</p>
+                                            </li>
+                                            <li><a href="javascript:void(0)"><img src="./img/news_plus.png"
+                                                        alt="news plus img"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="notice">
+                            <div class="no_top">
+                                <h3>공지사항</h3>
+                                <div class="nt_con">
+
+                                    <div class="nt_box">
+                                        <a href="javascript:void(0)"></a>
+                                        <ul>
+                                            <li>
+                                                <h5>2023 경북 디지털전환 종합지원 사업공고</h5>
+                                            </li>
+                                            <li>
+                                                <p>2023-06-13 </p>
+                                            </li>
+                                            <li><a href="javascript:void(0)"><img src="./img/news_plus.png"
+                                                        alt="news plus img"></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="nt_box">
+                                        <a href="javascript:void(0)"></a>
+                                        <ul>
+                                            <li>
+                                                <h5>2023 스마트공장 AS 지원사업</h5>
+                                            </li>
+                                            <li>
+                                                <p>2023-06-07 </p>
+                                            </li>
+                                            <li><a href="javascript:void(0)"><img src="./img/news_plus.png"
+                                                        alt="news plus img"></a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="no_bot">
+                                <h3>온라인 문의</h3>
+                                <div class="nb_plus">
+                                    <p><a href="javascript:void(0)"><img src="./img/news_plus.png"
+                                                alt="news plus img"></a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
+            </div>
         </section>
         <footer>
             <div class="f_con">
                 <div class="f_logo">
-                    <img src="http://www.nexasf.com/images/common/f_logo.png" alt="">
+                    <img src="./img/f_logo.png" alt="logo img">
                 </div>
                 <div class="f_txt">
-                    <p><a href="#">개인정보취급방침</a>|<a href="#">이용약관</a></p>
+                    <p><a href="javascript:void(0)">개인정보취급방침</a>|<a href="javascript:void(0)">이용약관</a></p>
                     <p>(주) 넥사 사업자 등록번호 503-81-74204</p>
-                    <p>본사 대구광역시 남구 봉덕로 9길 89-128 | 연구소 | 대구광역시 수성구 알파시티 1로 160, SW 융합테크비즈니스센터 511호 | 넥사DS 대구광역시 북구 신청동로 866-7번지 4층</p>
+                    <p>본사 대구광역시 남구 봉덕로 9길 89-128 | 연구소 | 대구광역시 수성구 알파시티 1로 160, SW 융합테크비즈니스센터 511호 | 넥사DS 대구광역시 북구 신청동로
+                        866-7번지 4층</p>
                     <p>TEL 053-657-7233 | FAX 053-657-7232</p>
                     <p>Copyright © 2021 NEXA All rights reserved.</p>
                     <p>
-                        <a href=#" target="_blank"><i class="xi-youtube-play"></i>Youtube</a>
-                        <a href="#" target="_blank"><i class="xi-naver-square"></i>Blog</a>
+                        <a href="javascript:void(0)"><i class="xi-youtube-play"></i>Youtube</a>
+                        <a href="javascript:void(0)"><i class="xi-naver-square"></i>Blog</a>
                     </p>
                 </div>
             </div>
         </footer>
-        <div class="fac_button fac_button5">	
+        <div class="fac_button fac_button5">
             <a href="#" target="_blank">
                 <div class="fbut_txt">
                     <p>넥사 디에스<br> 홈페이지 바로가기</p>
                 </div>
             </a>
         </div>
-        <div class="fac_button fac_button1">	
-            <a href="http://pf.kakao.com/_wMfTb/chat" target="_blank">
+        <div class="fac_button fac_button1">
+            <a href="javascript:void(0)">
                 <div class="fbut_txt">
                     <p>카카오 상담<br> 바로가기</p>
                 </div>
             </a>
         </div>
-        <div class="fac_button fac_button2">	
-            <a href="#">
+        <div class="fac_button fac_button2">
+            <a href="javascript:void(0)">
                 <div class="fbut_txt">
                     <p>상담 문의<br>바로가기</p>
                 </div>
             </a>
         </div>
         <div class="fac_button fac_button3">
-            <a href="#" target="_blank">
+            <a href="javascript:void(0)">
                 <div class="fbut_txt">
                     <p>넥사 컨설팅<br>홈페이지 바로가기</p>
                 </div>
             </a>
         </div>
         <div id="main_top" class="fac_button fac_button4">
-            <a href="#"><i class="xi-arrow-up xi-fw" aria-hidden="true"></i></a>
+            <a href="javascript:void(0)"><i class="xi-arrow-up xi-fw" aria-hidden="true"></i></a>
         </div>
     </div><!-- wrap -->
 
- 
+
 </body>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
-  </script>
-  <script>
-    $(function() {
-        $("#main_top").on("click", function() {
-            $("html, body").animate({scrollTop:0}, '500');
+</script>
+<script>
+    $(function () {
+        $("#main_top").on("click", function () {
+            $("html, body").animate({ scrollTop: 0 }, '500');
             return false;
         });
     });
-    </script>
+</script>
 
 <script>
     function openCity(evt, cityName) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
-      document.getElementById(cityName).style.display = "block";
-      evt.currentTarget.className += " active";
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[ i ].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[ i ].className = tablinks[ i ].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
     }
-    </script>
+</script>
 
 </html>
-
